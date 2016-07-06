@@ -32,11 +32,11 @@ var MainComponent = React.createClass({
 				<div>
 					<div className="nav-bar">
 						<div className="about-page" onClick={this.aboutClick}> 
-						Home Page 
+						About Me 
 						</div>
 					
 						<div className="portfolio-page" onClick={this.portfolioClick}>
-						Portfolio	
+						Portfolio 
 						</div>
 
 						<div className="contact-page" onClick={this.contactClick}> 
@@ -66,7 +66,13 @@ var AboutPage = React.createClass({
 			return(
 				<div>
 					<div className="about-text">
-						Hey there! My name is Ada and I'm a recent WDI grad who enjoys blah blah blah.
+						<div className="header2">Hey there!</div>
+							<p className="about-me">
+								My name is Ada and I'm a soon-to-be WDI grad student. I also love the great outdoors, lunching on some tuna & yellowtail and dinnering on a nice bowl of ramen with miso soup base and pork belly slice. Did I just hear your stomach growl? Well come eat with me! 
+							<br></br>
+							<br></br>
+								All jokes aside, I'm an aspiring web developer with a creative flare and enjoy building apps while keeping the user experience in mind.
+							</p>
 					</div>
 				</div>
 				);
@@ -85,10 +91,24 @@ var PortfolioPage = React.createClass({
 		return(
 			<div>
 				<div className="portfolio-text">
-					Here is a list of shit that's I've done. 
-					<li>bleh</li>
-					<li>bleh</li>
-					<li>bleh</li>
+					<div className="header2">Here is a list of shit that I've done.</div>
+					<p className="about-me">
+						Watch a demo.
+					</p>
+					<dl className="dl-horizontal">
+  					<dt>Wishlister</dt>
+  							<dd>
+  								<iframe src="https://player.vimeo.com/video/173643188" width="320" height="219" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+  								</iframe>
+								</dd>
+ 						<dt>What The Fork?</dt> 
+ 							<dd>
+ 								<iframe src="https://player.vimeo.com/video/173649473" width="320" height="219" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+ 								</iframe>
+ 							</dd>
+ 						<dt>More </dt>
+ 						<dd>Coming soon....</dd>
+ 					</dl>	
 				</div>
 			</div>
 			)
@@ -107,8 +127,22 @@ var ContactPage = React.createClass({
 		return(
 			<div>
 				<div className="contact-text">
-					This is my contacts.
-					877-393-4448.
+					<div className="header2">Reach out!</div>
+						<p className="about-me">
+						I'd love to hear from you!
+						</p>
+						<dl className="dl-horizontal">
+  						<dt>Email</dt>
+  							<dd> axu1122@gmail.com</dd>
+ 							<dt>LinkedIn </dt> 
+ 								<dd>
+ 									<a href="lhttps://www.linkedin.com/in/axu1122"> let's connect</a>
+ 								</dd>
+ 							<dt>Github </dt> 
+ 								<dd>
+ 									<a href="https://github.com/axu1122/"> git jit </a>
+ 								</dd>
+						</dl>
 				</div>
 			</div>
 			)
