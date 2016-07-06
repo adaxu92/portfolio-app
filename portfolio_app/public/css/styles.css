@@ -37,7 +37,7 @@ body{
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: 100% auto;
+	background-size: cover;
   position: absolute;
   min-height: 100%;
   width: 100%;
@@ -74,4 +74,10 @@ body{
 }
 dt{
 	font-family: 'Auto';
+}
+dd{
+	padding: 5px;
+}
+dl{
+	margin-top: 10px;
 }

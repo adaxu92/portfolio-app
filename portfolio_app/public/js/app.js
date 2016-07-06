@@ -91,9 +91,9 @@ var PortfolioPage = React.createClass({
 		return(
 			<div>
 				<div className="portfolio-text">
-					<div className="header2">Here is a list of shit that I've done.</div>
+					<div className="header2">Here is a list of shit that I've done!</div>
 					<p className="about-me">
-						Watch a demo.
+						Check out a demo.
 					</p>
 					<dl className="dl-horizontal">
   					<dt>Wishlister</dt>
