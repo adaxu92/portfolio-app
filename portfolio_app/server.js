@@ -28,8 +28,8 @@ app.use(cookieParser());
 //==============
 // Controllers
 //==============
-var viewersController = require('/contollers/viewers.js')
-app.use('/', viewersController);
+// var viewersController = require('/contollers/viewers.js')
+// app.use('/', viewersController);
 
 //==============
 // Listen
