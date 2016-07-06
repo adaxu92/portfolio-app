@@ -1,5 +1,36 @@
+@font-face{
+	font-family: 'Geo Sans';
+	src: url(../fonts/GeosansLight.ttf);
+}
 body{
-	background-color: blue;
+	margin: 0;
+	padding: 0;
+	background-color: #2caad2; 
+}
+.show-results{
+	height: 100%;
+	width: 100%;
+	font-family: 'Geo Sans'; 
+	font-size: 2rem;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: white;
+	color: black;
+}
+.about-page, .portfolio-page, .contact-page{
+	display: inline-block;
+	margin: 5px;
+	padding: 5px;
+	font-family: 'Geo Sans'; 
+	font-size: 1.5rem;
+	color: white;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+.about-page:hover, .portfolio-page:hover, .contact-page:hover{
+	font-size: 1.8rem;
+	color: yellow;
 }
 .hidden{
 	display: none;

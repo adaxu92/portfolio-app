@@ -29,20 +29,25 @@ var MainComponent = React.createClass({
 	},
 		render: function(){
 			return(
-				<div className="nav-bar">
-					<div onClick={this.aboutClick}> 
+				<div>
+					<div className="nav-bar">
+						<div className="about-page" onClick={this.aboutClick}> 
 						Home Page 
-						{this.state.showAbout ?  <AboutPage /> : null }
-					</div>
+						</div>
 					
-					<div onClick={this.portfolioClick}> 
-						Portfolio
-						{this.state.showPortfolio ? <PortfolioPage /> : null } 
-					</div>
-					
-					<div onClick={this.contactClick}> 
+						<div className="portfolio-page" onClick={this.portfolioClick}>
+						Portfolio	
+						</div>
+
+						<div className="contact-page" onClick={this.contactClick}> 
 						Contact
+						</div>
+					</div>	
+					
+					<div className="show-results">
+						{this.state.showAbout ?  <AboutPage /> : null }
 						{this.state.showContact ? <ContactPage /> : null } 
+						{this.state.showPortfolio ? <PortfolioPage /> : null } 
 					</div>
 				</div>
 			);
@@ -60,7 +65,7 @@ var AboutPage = React.createClass({
 		render: function(){
 			return(
 				<div>
-					<div className="about-page">
+					<div className="about-text">
 						Hey there! My name is Ada and I'm a recent WDI grad who enjoys blah blah blah.
 					</div>
 				</div>
@@ -79,7 +84,7 @@ var PortfolioPage = React.createClass({
 	render: function(){
 		return(
 			<div>
-				<div className="portfolio-page">
+				<div className="portfolio-text">
 					Here is a list of shit that's I've done. 
 					<li>bleh</li>
 					<li>bleh</li>
@@ -101,7 +106,7 @@ var ContactPage = React.createClass({
 	render: function(){
 		return(
 			<div>
-				<div className="contact-page">
+				<div className="contact-text">
 					This is my contacts.
 					877-393-4448.
 				</div>
