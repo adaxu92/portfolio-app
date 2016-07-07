@@ -1,13 +1,23 @@
 var MainComponent = React.createClass({
 	getInitialState: function(){
 		return{
+			showHome: true,
 			showAbout: false,
 			showPortfolio: false,
 			showContact: false
 		};
 	},
+		homeClick:function(){
+		this.setState({
+			showHome: true,
+			showAbout: false,
+			showPortfolio: false,
+			showContact: false
+		});
+	},
 		aboutClick: function(){
 		this.setState({
+			showHome: false,
 			showAbout: true,
 			showPortfolio: false, 
 			showContact: false
@@ -15,6 +25,7 @@ var MainComponent = React.createClass({
 	},
 		portfolioClick: function(){
 			this.setState({
+				showHome: false,
 				showAbout: false,
 				showPortfolio: true,
 				showContact: false
@@ -22,6 +33,7 @@ var MainComponent = React.createClass({
 	},
 		contactClick: function(){
 			this.setState({
+				showHome: false,
 				showAbout: false,
 				showPortfolio: false,
 				showContact: true
@@ -30,7 +42,11 @@ var MainComponent = React.createClass({
 		render: function(){
 			return(
 				<div>
-					<div className="nav-bar">
+					<div className="nav-bar"> 
+						<div className="home-page" onClick={this.homeClick}> 
+						Home
+						</div>
+
 						<div className="about-page" onClick={this.aboutClick}> 
 						About Me 
 						</div>
@@ -45,18 +61,41 @@ var MainComponent = React.createClass({
 					</div>	
 					
 					<div className="show-results">
-						{this.state.showAbout ?  <AboutPage /> : null }
-						{this.state.showContact ? <ContactPage /> : null } 
-						{this.state.showPortfolio ? <PortfolioPage /> : null } 
+							{this.state.showHome ? <HomePage /> : null }
+							{this.state.showAbout ?  <AboutPage /> : null }
+							{this.state.showContact ? <ContactPage /> : null } 
+							{this.state.showPortfolio ? <PortfolioPage /> : null } 
 					</div>
 				</div>
 			);
 		}
 }); 
 
+var HomePage = React.createClass({
+	getInitialState: function(){
+		return{
+			showHome: true,
+			showAbout: false,
+			showPortfolio: false,
+			showContact: false
+		}
+	},
+	render: function(){
+		return(
+			<div className="home-text"> 
+				<div className="motto">
+					Create 
+					<div className="and">&</div> 
+					Explore
+				</div>
+			</div>
+			)
+	}
+})
 var AboutPage = React.createClass({
 	getInitialState: function(){
 		return{
+			showHome: false,
 			showAbout: true,
 			showPortfolio: false,
 			showContact: false
@@ -71,7 +110,10 @@ var AboutPage = React.createClass({
 								My name is Ada and I'm a soon-to-be WDI grad student. I also love the great outdoors, lunching on some tuna & yellowtail and dinnering on a nice bowl of ramen with miso soup base and pork belly slice. Did I just hear your stomach growl? Well come eat with me! 
 							<br></br>
 							<br></br>
-								All jokes aside, I'm an aspiring web developer with a creative flare and enjoy building apps while keeping the user experience in mind.
+								All jokes aside, I'm an aspiring web developer with a creative flare and enjoy building apps while keeping the user experience in mind. 
+							<br></br>
+							<br></br>
+								Browse through my portfolio page for project video demos or contact page to view résumé and other platforms. 
 							</p>
 					</div>
 				</div>
@@ -82,6 +124,7 @@ var AboutPage = React.createClass({
 var PortfolioPage = React.createClass({
 	getInitialState: function(){
 		return{
+			showHome: false,
 			showAbout: false,
 			showPortfolio: true,
 			showContact: false
@@ -118,6 +161,7 @@ var PortfolioPage = React.createClass({
 var ContactPage = React.createClass({
 	getInitialState: function(){
 		return{
+			showHome: false,
 			showAbout: false,
 			showPortfolio: false,
 			showContact: true
@@ -125,26 +169,28 @@ var ContactPage = React.createClass({
 	},
 	render: function(){
 		return(
-			<div>
 				<div className="contact-text">
 					<div className="header2">Reach out!</div>
-						<p className="about-me">
-						I'd love to hear from you!
-						</p>
-						<dl className="dl-horizontal">
-  						<dt>Email</dt>
-  							<dd> axu1122@gmail.com</dd>
- 							<dt>LinkedIn </dt> 
- 								<dd>
- 									<a href="lhttps://www.linkedin.com/in/axu1122"> let's connect</a>
- 								</dd>
- 							<dt>Github </dt> 
- 								<dd>
- 									<a href="https://github.com/axu1122/"> git jit </a>
- 								</dd>
-						</dl>
+						<p className="contact-me">
+							I'd love to hear from you!
+							<br></br>
+							<br></br>
+
+  						Send me an email via <a> axu1122@gmail.com</a>.
+  						<br></br>
+
+ 							Connect with me on
+ 							<a href="http://bit.ly/29vRhlZ"> LinkedIn</a>.
+ 							<br></br>
+
+ 							Take a gander at my
+ 							<a href="http://bit.ly/29khctX"> Github</a>,
+ 							<br></br>
+
+ 							or instead view my 
+ 							<a href="http://bit.ly/29AyDeb"> résumé</a>.
+ 						</p>
 				</div>
-			</div>
 			)
 	}
 })

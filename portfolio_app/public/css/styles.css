@@ -10,10 +10,17 @@
 	font-family: 'Auto';
 	src: url(../fonts/autoradiographic.ttf);
 }
+@font-face{
+	font-family: 'Lemon';
+	src: url(../fonts/LemonMilk.otf);
+}
 body{
 	margin: 0;
 	padding: 0;
-	background-color: #2caad2; 
+	background-color: white; 
+}
+#main-container{
+	background-color: white;
 }
 .show-results{
 	height: 100%;
@@ -24,6 +31,10 @@ body{
 	background-color: white;
 	color: black;
 }
+.home-text{
+	background: url("http://bit.ly/29pe54G") no-repeat center center fixed;
+	background: linear-gradient:(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+}
 .about-text{
 	background: url("http://bit.ly/29nThdW") no-repeat center center fixed;
 }
@@ -33,7 +44,7 @@ body{
 .contact-text{
 	background: url("http://bit.ly/29qsWNX") no-repeat center center fixed;
 }
-.about-text, .portfolio-text, .contact-text{	
+.home-text, .about-text, .portfolio-text, .contact-text{	
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -43,7 +54,7 @@ body{
   width: 100%;
   padding-left: 10px; 
 }
-.about-page, .portfolio-page, .contact-page{
+.home-page, .about-page, .portfolio-page, .contact-page{
 	display: inline-block;
 	margin: 5px;
 	padding: 5px;
@@ -52,9 +63,9 @@ body{
 	color: black;
 	margin-top: 10px;
 }
-.about-page:hover, .portfolio-page:hover, .contact-page:hover{
+a:hover, .home-page:hover, .about-page:hover, .portfolio-page:hover, .contact-page:hover{
 	font-size: 2.5rem;
-	text-shadow: 1px 1px #ffc04d;
+	text-shadow: 1px 1px #ddd1e7;
 	color: black;
 }
 .hidden{
@@ -81,3 +92,26 @@ dd{
 dl{
 	margin-top: 10px;
 }
+.motto{
+	font-family: 'Lemon';
+	color: white;
+	text-shadow: 2px 2px black;
+	font-size: 9rem;
+	text-align: center;	
+	padding-top: 50px;
+}
+.and{
+	font-size: 7rem;
+}
+li{
+	list-style: none;
+}
+a{
+	font-family: 'Coolvetiva';
+}
+.contact-me{
+	width: 100%;
+	margin-left: 10px;
+	font-size: 2.5rem;
+}
+
