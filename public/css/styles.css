@@ -62,11 +62,16 @@ body{
 	font-size: 2rem;
 	color: black;
 	margin-top: 10px;
+	height: auto;
 }
 a:hover, .home-page:hover, .about-page:hover, .portfolio-page:hover, .contact-page:hover{
-	font-size: 2.5rem;
+	display: inline-block;
+	font-size: 2.2rem;
 	text-shadow: 1px 1px #ddd1e7;
 	color: black;
+	padding: 0;
+	padding-left: 2px;
+	margin: 2px;
 }
 .hidden{
 	display: none;

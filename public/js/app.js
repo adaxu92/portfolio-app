@@ -107,7 +107,7 @@ var AboutPage = React.createClass({
 					<div className="about-text">
 						<div className="header2">Hey there!</div>
 							<p className="about-me">
-								My name is Ada and I'm a soon-to-be WDI grad student. I also love the great outdoors, lunching on some tuna & yellowtail and dinnering on a nice bowl of ramen with miso soup base and pork belly slice. Did I just hear your stomach growl? Well come eat with me! 
+								My name is Ada and I'm a soon-to-be WDI grad student. I also love the great outdoors and eating on a nice bowl of ramen with miso soup base and pork belly slice. Did I just hear your stomach growl? Well come eat with me! 
 							<br></br>
 							<br></br>
 								All jokes aside, I'm an aspiring web developer with a creative flare and enjoy building apps while keeping the user experience in mind. 
@@ -134,7 +134,7 @@ var PortfolioPage = React.createClass({
 		return(
 			<div>
 				<div className="portfolio-text">
-					<div className="header2">Here is a list of shit that I've done!</div>
+					<div className="header2">Here is a list of things that I've done!</div>
 					<p className="about-me">
 						Check out a demo.
 					</p>
@@ -188,7 +188,7 @@ var ContactPage = React.createClass({
  							<br></br>
 
  							or instead view my 
- 							<a href="http://bit.ly/29AyDeb"> résumé</a>.
+ 							<a href="../WD_Resume.pdf"> résumé</a>.
  						</p>
 				</div>
 			)
