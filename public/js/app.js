@@ -107,10 +107,7 @@ var AboutPage = React.createClass({
 					<div className="about-text">
 						<div className="header2">Hey there!</div>
 							<p className="about-me">
-								My name is Ada and I'm a soon-to-be WDI grad student. I also love the great outdoors and eating on a nice bowl of ramen with miso soup base and pork belly slice. Did I just hear your stomach growl? Well come eat with me! 
-							<br></br>
-							<br></br>
-								All jokes aside, I'm an aspiring web developer with a creative flare and enjoy building apps while keeping the user experience in mind. 
+								My name is Ada and I'm an aspiring web developer with a creative flare and enjoy building apps while keeping the user experience in mind. I am also a soon-to-be WDI graduate at General Assembly. 
 							<br></br>
 							<br></br>
 								Browse through my portfolio page for project video demos or contact page to view résumé and other platforms. 
