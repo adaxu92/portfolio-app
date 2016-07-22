@@ -1453,12 +1453,12 @@ dt {
   font-weight: bold;
 }
 dd {
-  margin-left: 0;
+  margin-left: 35px;
 }
 @media (min-width: 768px) {
   .dl-horizontal dt {
     float: left;
-    width: 160px;
+    width: 20%;
     overflow: hidden;
     clear: left;
     text-align: right;

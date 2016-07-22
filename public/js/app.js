@@ -107,10 +107,16 @@ var AboutPage = React.createClass({
 					<div className="about-text">
 						<div className="header2">Hey there!</div>
 							<p className="about-me">
-								My name is Ada and I'm an aspiring web developer with a creative flare and enjoy building apps while keeping the user experience in mind. I am also a soon-to-be WDI graduate at General Assembly. 
+								My name is Ada and I'm an aspiring web developer who recently graduated from WDI at General Assembly. I enjoy exercising my creative flare and building apps while keeping the user experience in mind.
 							<br></br>
 							<br></br>
-								Browse through my portfolio page for project video demos or contact page to view résumé and other platforms. 
+								My knowledge includes Ruby on Rails, Node.js and Express. Some front-end frameworks include Bootstrap, React and am currently diving into Angular and Sass! 
+							<br></br>
+							<br></br>
+								Aside from developing, I love hiking, eating ramen (regardless of the weather outside) and playing with my 9 year old cat, Luna.
+							<br></br>
+							<br></br>
+								Feel free to browse through my portfolio page for project video demos or contact page to view résumé and other platforms.
 							</p>
 					</div>
 				</div>
@@ -138,16 +144,18 @@ var PortfolioPage = React.createClass({
 					<dl className="dl-horizontal">
   					<dt>Wishlister</dt>
   							<dd>
-  								<iframe src="https://player.vimeo.com/video/173643188" width="320" height="219" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+  								<iframe src="https://player.vimeo.com/video/173643188" width="427" height="236" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
   								</iframe>
 								</dd>
  						<dt>What The Fork?</dt> 
  							<dd>
- 								<iframe src="https://player.vimeo.com/video/173649473" width="320" height="219" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+ 								<iframe src="https://player.vimeo.com/video/173649473" width="427" height="236" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
  								</iframe>
  							</dd>
+ 						<dt>Lovelace Provisions</dt>
+ 							<dd><iframe src="https://player.vimeo.com/video/175870321" width="427" height="236" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></dd>
  						<dt>More </dt>
- 						<dd>Coming soon....</dd>
+ 						<dd id="soon"> Coming soon....</dd>
  					</dl>	
 				</div>
 			</div>
