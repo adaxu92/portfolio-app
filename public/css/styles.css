@@ -49,29 +49,33 @@ body{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-  position: absolute;
-  min-height: 100%;
-  width: 100%;
-  padding-left: 10px; 
+	position: absolute;
+	min-height: 100%;
+	width: 100%;
+	padding-left: 10px;
+	font-family: 'Geo Sans';
+}
+.nav-bar{
+	height: 5rem;
+	padding: 0;
 }
 .home-page, .about-page, .portfolio-page, .contact-page{
-	display: inline-block;
-	margin: 5px;
-	padding: 5px;
-	font-family: 'Geo Sans'; 
+	font-family: 'Oswald', sans-serif;
 	font-size: 2rem;
 	color: black;
-	margin-top: 10px;
-	height: auto;
+	margin: 12px;
+	padding: 0;
+}
+.about-page, .portfolio-page, .contact-page{
+	float: right;
+}
+.home-page{
+	float: left;
 }
 a:hover, .home-page:hover, .about-page:hover, .portfolio-page:hover, .contact-page:hover{
 	display: inline-block;
-	font-size: 2.2rem;
-	text-shadow: 1px 1px #ddd1e7;
-	color: black;
-	padding: 0;
-	padding-left: 2px;
-	margin: 2px;
+	text-shadow: 0px 1px lightblue;
+	border-bottom: 1px solid lightblue;
 }
 .hidden{
 	display: none;
@@ -85,13 +89,9 @@ a:hover, .home-page:hover, .about-page:hover, .portfolio-page:hover, .contact-pa
 	font-size: 50px;
 }
 .about-me, li{
-	width: 50%;
+	width: 40%;
 	margin-left: 15px;
 	text-shadow: 0px .5px white;
-}
-.nav-bar{
-	font-weight: bold;
-	text-shadow: .5px 0px black;
 }
 dt{
 	font-family: 'Auto';

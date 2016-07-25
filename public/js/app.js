@@ -47,17 +47,17 @@ var MainComponent = React.createClass({
 						Home
 						</div>
 
-						<div className="about-page" onClick={this.aboutClick}> 
-						About Me 
-						</div>
-					
+						<div className="contact-page" onClick={this.contactClick}> 
+						Contact
+						</div>						
+
 						<div className="portfolio-page" onClick={this.portfolioClick}>
 						Portfolio 
 						</div>
 
-						<div className="contact-page" onClick={this.contactClick}> 
-						Contact
-						</div>
+						<div className="about-page" onClick={this.aboutClick}> 
+						About Me 
+						</div> 
 					</div>	
 					
 					<div className="show-results">
