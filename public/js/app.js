@@ -144,16 +144,16 @@ var PortfolioPage = React.createClass({
 					<dl className="dl-horizontal">
   					<dt>Wishlister</dt>
   							<dd>
-  								<iframe src="https://player.vimeo.com/video/173643188" width="427" height="236" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+  								<iframe src="https://player.vimeo.com/video/173643188" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
   								</iframe>
 								</dd>
  						<dt>What The Fork?</dt> 
  							<dd>
- 								<iframe src="https://player.vimeo.com/video/173649473" width="427" height="236" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+ 								<iframe src="https://player.vimeo.com/video/173649473" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
  								</iframe>
  							</dd>
  						<dt>Lovelace Provisions</dt>
- 							<dd><iframe src="https://player.vimeo.com/video/175870321" width="427" height="236" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></dd>
+ 							<dd><iframe src="https://player.vimeo.com/video/175870321" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></dd>
  						<dt>More </dt>
  						<dd id="soon"> Coming soon....</dd>
  					</dl>	
