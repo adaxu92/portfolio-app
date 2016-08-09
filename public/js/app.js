@@ -181,7 +181,7 @@ var ContactPage = React.createClass({
 							<br></br>
 							<br></br>
 
-  						Send me an email via <a> axu1122@gmail.com</a>.
+  						Send me an email via <a> adaxu92@gmail.com</a>.
   						<br></br>
 
  							Connect with me on
@@ -193,7 +193,7 @@ var ContactPage = React.createClass({
  							<br></br>
 
  							or instead view my 
- 							<a href="../WD_Resume.pdf"> résumé</a>.
+ 							<a href="../Ada_Dev.pdf"> résumé</a>.
  						</p>
 				</div>
 			)
